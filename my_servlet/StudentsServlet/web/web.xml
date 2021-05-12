@@ -1,0 +1,44 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <!--        deployment descriptor (DD)-->
+
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>io.github.olgazskiba.myServlets.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AllStudentsServlet</servlet-name>
+        <servlet-class>io.github.olgazskiba.myServlets.AllStudentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllStudentsServlet</servlet-name>
+        <url-pattern>/students</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddStudentsServlet</servlet-name>
+        <servlet-class>io.github.olgazskiba.myServlets.AddStudentsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddStudentsServlet</servlet-name>
+        <url-pattern>/students/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentCardServlet</servlet-name>
+        <servlet-class>io.github.olgazskiba.myServlets.StudentCardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentCardServlet</servlet-name>
+        <url-pattern>/student/</url-pattern>
+    </servlet-mapping>
+
+</web-app>
